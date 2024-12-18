@@ -131,8 +131,9 @@ main {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 90%;
-    gap: 10px;
+    gap: 20px;
 }
+
 
 /* h2 styling (on the left) */
 .form-container h2 {
@@ -150,7 +151,7 @@ main {
 /* Form elements styling (on the right) */
 .scrollable-dropdown,
 input[type="text"] {
-    width: 40%; /* Make the input field or dropdown smaller for 5-digit numbers */
+    width: 35%; /* Make the input field or dropdown smaller for 5-digit numbers */
     padding: 8px;
     border: 1px solid #ffffff;
     border-radius: 5px;
