@@ -10,27 +10,27 @@ const data = [
     { A: 'Row 4 Data A', B: 'Row 4 Data B', C: 'Row 4 Data C', D: 'Row 4 Data D' },
 ];
 
-// Function to populate the table
+
 function populateTable(data) {
     const tableBody = document.querySelector('#dynamic-table tbody');
 
-    // Loop through the data and create table rows
+    
     data.forEach(item => {
-        const row = document.createElement('tr'); // Create a new row
+        const row = document.createElement('tr'); 
 
-        // For each column in the row, create a table cell (td)
+        
         for (let key in item) {
             const cell = document.createElement('td');
-            cell.textContent = item[key]; // Set the text of the cell
-            row.appendChild(cell); // Add the cell to the row
+            cell.textContent = item[key]; 
+            row.appendChild(cell); 
         }
 
-        // Add the row to the table body
+        
         tableBody.appendChild(row);
     });
 }
 
-// Call the function to populate the table with data
+
 populateTable(data);
 
 
