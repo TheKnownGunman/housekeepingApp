@@ -40,9 +40,15 @@
 
         <form class="form-container">
             <h2>Thank you for help!</h2>
-            <h3>Employee Name (Helper)</h3>
+            <h3><span id="userName"></span>!</h3>
             
         </form>
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const userName = urlParams.get('userName');
+            document.getElementById('userName').textContent = userName ? decodeURIComponent(userName) : 'Guest';
+        </script>
 
 
         <a href="roomPage.html">
