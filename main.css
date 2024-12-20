@@ -18,67 +18,66 @@
     }
     
     header {
-        background-color: #000000; /* Light background */
-        position: fixed; /* Keeps the header at the top */
+        background-color: #000000; 
+        position: fixed; 
         top: 0;
         left: 0;
-        width: 100%; /* Full width */
+        width: 100%;
         padding: 10px 15px;
-        z-index: 1000; /* Ensures it's above other content */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
-        border-bottom: 2px solid #ccc; /* Adjust thickness and color as needed */
+        z-index: 1000; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid #ccc; 
         padding: 10px;
     }
     
     .header-row {
-        display: flex; /* Align items in a row */
-        justify-content: space-between; /* Space between left and right */
-        align-items: center; /* Vertically center items */
-        list-style: none; /* Remove bullet points */
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        list-style: none; 
     }
     
-    /* Left icon */
+    /* rIGHT icon */
     .icon a {
         text-decoration: none;
-        font-size: 20px; /* Adjust icon size */
-        color: #ffffff; /* Dark icon color */
+        font-size: 20px; 
+        color: #ffffff; 
     }
     
     /* Center title */
     .header-title {
-        flex: 1; /* Take up remaining space to center */
-        text-align: center; /* Align the text in the center */
+        flex: 1; 
+        text-align: center; 
         font-size: 20px;
-        font-weight: bold;
-        color: #ffffff; /* Dark text color */
+        font-weight: lighter;
+        color: #ffffff; 
+        
     }
 
 /* Side bar*/
-
-/* Sidebar Styling */
 .sidebar {
     position: fixed;
     top: 0;
-    right: -250px; /* Initially hidden (off-screen) */
+    right: -250px; 
     width: 250px;
     height: 100%;
-    background-color: #333; /* Dark sidebar */
+    background-color: #333; 
     color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
-    z-index: 1001; /* Ensure it appears above other content */
-    padding-top: 60px; /* Add space for header */
+    transition: right 0.3s ease-in-out; 
+    z-index: 1001; 
+    padding-top: 60px; 
 }
 
 .sidebar ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .sidebar ul li {
     padding: 15px 20px;
-    border-bottom: 1px solid #444; /* Divider lines */
+    border-bottom: 1px solid #444;
 }
 
 .sidebar ul li a {
@@ -90,7 +89,7 @@
 }
 
 .sidebar ul li a:hover {
-    color: #f39c12; /* Highlight on hover */
+    color: #f39c12; 
 }
 
 
@@ -102,22 +101,22 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 
 
 
 
-    /* Main container styling for forms */
+    
 /* Main container for the forms */
 main {
-    margin-top: 70px; /* Avoid overlap with the header */
+    margin-top: 70px; 
     padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 90px; /* Spacing between forms */
+    gap: 90px; 
     color: #fff;
     background-color: #000000;
     align-items: center;
@@ -127,22 +126,23 @@ main {
 /* Form container styling */
 .form-container {
     display: flex;
-    justify-content:left; /* Aligns h2 and form elements horizontally */
-    align-items: center; /* Center-aligns h2 and form elements */
+    justify-content:left; 
+    align-items: center; 
     background: #4b4b4b;
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 90%;
     gap: 20px;
+    
 }
 
 
-/* h2 styling (on the left) */
+
 .form-container h2 {
     font-size: 13px;
     color: #ffffff;
-    margin: 0; /* No margin around the heading */
+    margin: 0; 
     width: 100px;
 }
 
@@ -151,16 +151,15 @@ main {
     color: goldenrod;
 }
 
-/* Form elements styling (on the right) */
 .scrollable-dropdown,
 input[type="text"] {
-    width: 35%; /* Make the input field or dropdown smaller for 5-digit numbers */
-    padding: 8px;
+    width: 35%;
     border: 1px solid #ffffff;
     border-radius: 5px;
     font-size: 14px;
     background-color: #000000;
     color: #ffffff;
+    
 }
 
 button {
@@ -171,7 +170,7 @@ button {
     border-radius: 5px;
     font-size: 10px;
     cursor: pointer;
-    margin-left: 10px; /* Space between input and button */
+    margin-left: 10px; 
     border-radius: 20px;
     width: auto;
 
@@ -204,35 +203,35 @@ main {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between table and buttons */
+    gap: 20px; 
 }
 
-/* Scrollable table container */
+
 .table-container {
-    max-height: 400px; /* Limit table height */
-    overflow-x: auto; /* Horizontal scrolling */
+    max-height: 400px; 
+    overflow-x: auto; 
     overflow-y: auto; /* Vertical scrolling */
-    border: 1px solid #ccc; /* Add border around the table */
+    border: 1px solid #ccc; 
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #000000;
 }
 
-/* Table styling */
+
 table {
-    width: 100%; /* Full width of the container */
-    border-collapse: collapse; /* Remove spacing between table cells */
+    width: 100%; 
+    border-collapse: collapse; 
 }
 
 thead {
-    background-color: #ffffff; /* Header background color */
-    color: #000000; /* Header text color */
+    background-color: #ffffff; 
+    color: #000000; 
 }
 
 th{
     padding: 10px;
     text-align: center;
-    border: 1px solid #ccc; /* Cell borders */
+    border: 1px solid #ccc; 
     font-size: 14px;
     background-color: #ffffff;
 }
@@ -240,25 +239,25 @@ th{
  td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #ccc; /* Cell borders */
+    border: 1px solid #ccc; 
     font-size: 14px;
     background-color: #000000;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Light grey for even rows */
+    background-color: #f9f9f9;
 }
 
 /* Button container styling */
 .button-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space between buttons */
-    gap: 30px; /* Add space between buttons */
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .button-container button {
-    flex: 1; /* Buttons take equal width */
+    flex: 1; 
     padding: 10px;
     background-color: #000000;
     color: #fff;
@@ -266,7 +265,7 @@ tbody tr:nth-child(even) {
     border-radius: 5px;
     font-size: 10px;
     cursor: pointer;
-    margin-left: 10px; /* Space between input and button */
+    margin-left: 10px;
     border-radius: 20px;
     width: 80px;
 
@@ -290,8 +289,8 @@ tbody tr:nth-child(even) {
 /* rooPage */
 .checkbox-container {
     display: flex;
-    gap: 20px; /* Space between Yes and No options */
-    align-items: center; /* Align items vertically */
+    gap: 20px; 
+    align-items: center;
 }
 
 .checkbox-container label {
@@ -301,8 +300,8 @@ tbody tr:nth-child(even) {
 }
 
 .checkbox-container input[type="radio"] {
-    margin-right: 8px; /* Space between the box and the label */
-    transform: scale(1.2); /* Enlarge the radio button for better visibility */
+    margin-right: 8px; 
+    transform: scale(1.2); 
 }
 
 
