@@ -151,6 +151,14 @@ main {
     color: goldenrod;
 }
 
+h3{
+    
+    font-size: larger;
+    color: #f39c12;
+    align-self: center;
+    
+}
+
 .scrollable-dropdown,
 input[type="text"] {
     width: 35%;
