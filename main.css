@@ -289,8 +289,6 @@ tbody tr:nth-child(even) {
 .button-container button:hover {
     background-color: #ffffff;
     color: #000000;
-
-
 }
 
 
@@ -311,6 +309,10 @@ tbody tr:nth-child(even) {
 .checkbox-container input[type="radio"] {
     margin-right: 8px; 
     transform: scale(1.2); 
+}
+
+input[type="checkbox"]:checked {
+    accent-color: goldenrod; /* Change to green or any color you like */
 }
 
 
