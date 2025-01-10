@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -38,22 +38,18 @@
 
     <main>
 
-        <form class="form-container">
-            <h2>Thank you for help!</h2>
-            <h3><span id="userName"></span>!</h3>
-            
+        <form class="form-container" action="thank.html" method="get">
+            <h2>Add Helper's No.</h2>
+            <input type="text" id="userInput" name="userName" required />
+            <button type="submit">Next</button>
         </form>
 
-        <script>
-            const urlParams = new URLSearchParams(window.location.search);
-            const userName = urlParams.get('userName');
-            document.getElementById('userName').textContent = userName ? decodeURIComponent(userName) : 'Guest';
-        </script>
-
-
         <a href="roomPage.html">
-            <button class="next" type="button">Done</button>
+            <button class="next" type="button">BACK</button>
         </a>
+
+
+        
 
         </main>
     
