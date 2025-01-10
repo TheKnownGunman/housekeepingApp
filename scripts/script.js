@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js'
+// import { createClient } from '@supabase/supabase-js'
 
 // Securely store Supabase credentials
 const supabaseUrl = "https://cfxjhngnlfhazkxfitja.supabase.co";
