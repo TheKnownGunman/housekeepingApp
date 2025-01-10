@@ -1,9 +1,9 @@
-// import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js'
 
 // Securely store Supabase credentials
 const supabaseUrl = "https://cfxjhngnlfhazkxfitja.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNmeGpobmdubGZoYXpreGZpdGphIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU5ODg3NDcsImV4cCI6MjA1MTU2NDc0N30.MrsuwC9EKFFNsVWh_6ukps7df2LRHNycbpCSq8YgshA";
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 // Utility function to check if a given date matches today's date
 function isToday(date) {
