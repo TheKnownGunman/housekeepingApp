@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -35,23 +36,49 @@
             <li><a href="clockOut.html">Logout</a></li>
         </ul>
     </div>
+    
 
     <main>
-
-        <form class="form-container" action="thank.html" method="get">
-            <h2>Add Helper's No.</h2>
-            <input type="text" id="userInput" name="userName" required />
-            <button type="submit">Next</button>
+        <!-- First Form: Dropdown for Numbers -->
+        <form class="form-container">
+            <h2>Floor No.</h2>
+            <select id="number-dropdown" class="scrollable-dropdown">
+                <!-- Generate numbers dynamically -->
+                <option value="" disabled selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    
+        
+        <form class="form-container">
+            <h2>Key No.</h2>
+            <input type="text" placeholder="" />
+            <button type="submit">Submit</button>
+        </form>
+    
+        
+        <form class="form-container" id="no-button">
+            <h2>Wagon No.</h2>
+            <input type="text" placeholder="" />
         </form>
 
-        <a href="./roomPage.html">
-            <button class="next" type="button">BACK</button>
+
+        <a href="./page2.html">
+            <button class="next" type="button">NEXT</button>
         </a>
-
-
         
-
-        </main>
+    </main>
     
     
 
