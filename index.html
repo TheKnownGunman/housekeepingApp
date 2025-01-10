@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee ClockIn</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="./scripts/script.js"></script>
+    <script defer src="./scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
        <h3>Clock In</h3>
-        <form class="form-container" id="no-button">
-            <h2>Emp No.</h2>
-            <input type="text" placeholder="" />
+        <form class="form-container" id="clock-in-form" onsubmit="return handleEmployeeLogin(event)">
+            <h2>Employee Number</h2>
+            <input type="text" id="employee-number" placeholder="Enter Employee Number" required />
+            <button class="next" type="submit">NEXT</button>
         </form>
-        <a href="./templates/floor.html">
-            <button class="next" type="button">NEXT</button>
-        </a>
-        
+        <p id="error-message" style="color: red; display: none;">Try correct employee number.</p>
     </main>    
 </body>
 </html>
