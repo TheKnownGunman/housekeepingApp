@@ -1,4 +1,4 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+import { createClient } from '@supabase/supabase-js'
 
 // Securely store Supabase credentials
 const supabaseUrl = "https://cfxjhngnlfhazkxfitja.supabase.co";
